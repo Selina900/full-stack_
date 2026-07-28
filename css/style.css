@@ -1,0 +1,33 @@
+/* Style the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Style a heading */
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+/* Style a paragraph */
+p {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Style a button */
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}

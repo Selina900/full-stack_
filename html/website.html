@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            background: white;
+            color: #0072ff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: yellow;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 15px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Frontend Design using HTML CSS JS</p>
+    <button class="btn" onclick="showMsg()">Click Me</button>
+</div>
+
+<!-- Cards -->
+<div class="cards">
+    <div class="card">
+        <h3>Service 1</h3>
+        <p>Web Design</p>
+    </div>
+
+    <div class="card">
+        <h3>Service 2</h3>
+        <p>Frontend Dev</p>
+    </div>
+
+    <div class="card">
+        <h3>Service 3</h3>
+        <p>UI Design</p>
+    </div>
+</div>
+
+<script>
+    function showMsg() {
+        alert("Welcome to Frontend Project!");
+    }
+</script>
+
+</body>
+</html>
